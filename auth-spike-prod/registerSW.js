@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/german-flashcards-site/auth-spike-prod/sw.js', { scope: '/german-flashcards-site/auth-spike-prod/' })})}
