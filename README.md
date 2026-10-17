@@ -3,10 +3,16 @@
 Use the current app: <https://licensedsaucer9-web.github.io/ls9-flashcards-site/>.
 
 The former `german-flashcards-site` Pages URL was retired on 2026-10-17.
-Pages hosting is disabled and this repository is archived, retaining its Git
-history and historical assets. The old URL no longer provides a supported
-redirect or recovery route. Archiving alone does not disable Pages; both
-operations form this retirement.
+The published redirect and app assets have been replaced by a minimal 404-only
+directory, and this repository is archived, retaining its Git history and
+historical assets. The old URL no longer provides a supported redirect or
+recovery route. Archiving alone would not retire the hosted application.
+
+GitHub rejected the Pages-disable API operation with HTTP 422, "Deactivating
+GitHub pages for this repository is not allowed." Pages therefore remains
+configured to publish `gh-pages:/docs`; that directory contains only a 404 page
+and `.nojekyll`. The former root app, worker, assets and previews are outside
+the publishing directory. Archiving freezes this retired deployment.
 
 ## Retirement decision
 
@@ -28,7 +34,7 @@ the old path and are retained as runbooks, not active hosting dependencies.
 
 Retirement does not delete the current app, Firebase accounts or Firestore data,
 the archived legacy data repository, or browser storage. Cached offline copies
-on old devices may continue running; disabling hosting does not remotely erase
+on old devices may continue running; retiring the deployment does not remotely erase
 or update those installations. Create bookmarks and Home Screen icons from the
 current app URL.
 
@@ -37,7 +43,7 @@ current app URL.
 The pre-retirement revision is
 `6bfcdecc8dbf506ac22e155adc5c855ea170b670` on `gh-pages`. Restore hosting only as a
 separate authorized operation: unarchive the repository if necessary, review
-the intended artifact, then re-enable Pages from `gh-pages` at `/`. Historical
+the intended artifact, then restore the Pages source to `gh-pages` at `/`. Historical
 client assets must not replace the current Firebase app or its data.
 
 Current operation and retirement records live in the
